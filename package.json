@@ -11,5 +11,5 @@
     "get", "self", "getter", "getself"
   ],
   "author": "Kevin S. Zanzi (kizzandev)",
-  "license": "ISC"
+  "license": "MIT"
 }
