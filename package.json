@@ -1,6 +1,6 @@
 {
   "name": "getself",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "get self",
   "main": "src/index.js",
   "type": "module",
@@ -8,7 +8,10 @@
     "node": ">=16.0.0"
   },
   "keywords": [
-    "get", "self", "getter", "getself"
+    "get",
+    "self",
+    "getter",
+    "getself"
   ],
   "author": "Kevin S. Zanzi (kizzandev)",
   "license": "MIT"
