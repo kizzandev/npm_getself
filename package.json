@@ -18,5 +18,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/kizzandev/npm_getself.git"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.4"
   }
 }

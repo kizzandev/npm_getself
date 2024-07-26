@@ -1,2 +1,8 @@
+node_modules
+*-lock.json
 .npmignore
+.gitignore
 LICENSE
+test/
+*.test.js
+.github/
