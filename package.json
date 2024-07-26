@@ -14,5 +14,9 @@
     "getself"
   ],
   "author": "Kevin S. Zanzi (kizzandev)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kizzandev/npm_getself.git"
+  }
 }
