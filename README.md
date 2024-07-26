@@ -48,6 +48,41 @@ Returns the input parameter as-is.
 - Default Callbacks: Provide getself as a default callback function that returns the input value.
 - Testing: Useful in testing scenarios where a simple pass-through function is required.
 
+## Example
+
+```js
+import getself from 'getself';
+
+// Example: Mock API response in tests
+function fetchData(apiCall, callback = getself) {
+  const data = apiCall();
+  return callback(data);
+}
+
+// Mock API call for testing
+function mockApiCall() {
+  return { id: 1, name: 'Test User', email: 'test@example.com' };
+}
+
+// Test case using getself as the callback
+const fetchedData = fetchData(mockApiCall);
+
+console.log(fetchedData);
+// Output: { id: 1, name: 'Test User', email: 'test@example.com' }
+
+// Example: Custom processing function for testing
+function processApiResponse(data) {
+  // Custom logic, e.g., extracting only specific fields
+  return { id: data.id, name: data.name };
+}
+
+// Test case using a custom callback
+const processedData = fetchData(mockApiCall, processApiResponse);
+
+console.log(processedData);
+// Output: { id: 1, name: 'Test User' }
+```
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
